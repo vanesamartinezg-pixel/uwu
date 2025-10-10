@@ -1,0 +1,11 @@
+#este programa calcula la pendiente de una recta
+print(calculo de la pendiente de una recta)
+x1=float(input("ingresa x1:"))
+y1=float(input("ingres y1:))
+x2=float(input("ingresa x2:"))
+y2=float(input("ingres y2:))
+
+if x2 ==x1:
+print("la pendiente no se piede calcular (divicion entre cero)")
+m=(y2-y1)/(x2-x1)
+print("la pendiente es:m,")
