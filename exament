@@ -1,0 +1,32 @@
+#Calcula la suma de los dígitos de un número.
+    Args:
+        numero (int): El número para calcular la suma de sus dígitos.
+    Returns:
+        int: La suma de los dígitos del número.
+    """
+    suma = 0
+    while numero > 0:
+        suma += numero % 10
+        numero //= 10
+    return suma
+
+def main():
+    # Solicita un número positivo al usuario
+    while True:
+        try:
+            numero = int(input("Ingrese un número positivo: "))
+            if numero > 0:
+                break
+            else:
+                print("El número debe ser positivo.")
+        except ValueError:
+            print("El valor ingresado no es un número.")
+
+    # Calcula la suma de los dígitos del número
+    suma = suma_digitos(numero)
+
+    # Imprime el resultado
+    print(f"La suma de los dígitos de {numero} es: {suma}")
+
+if __name__ == "__main__":
+    main()
